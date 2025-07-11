@@ -1120,117 +1120,90 @@
 
         // Project galleries data
         const galleries = {
-            project1: [
-                { url: "react_images/react1.png", title: "React CI/CD Pipeline - Step 1" },
-                { url: "react_images/react2.png", title: "React CI/CD Pipeline - Step 2" },
-                { url: "react_images/react3.png", title: "React CI/CD Pipeline - Step 3" },
-                { url: "react_images/react4.png", title: "React CI/CD Pipeline - Step 4" },
-                { url: "react_images/react5.png", title: "React CI/CD Pipeline - Step 5" },
-                { url: "react_images/react6.png", title: "React CI/CD Pipeline - Step 6" },
-                { url: "react_images/react7.png", title: "React CI/CD Pipeline - Step 7" },
-                { url: "react_images/react8.png", title: "React CI/CD Pipeline - Step 8" },
-                { url: "react_images/react9.png", title: "React CI/CD Pipeline - Step 9" },
-                { url: "react_images/react10.png", title: "React CI/CD Pipeline - Step 10" },
-                { url: "react_images/react11.png", title: "React CI/CD Pipeline - Step 11" },
-                { url: "react_images/react12.png", title: "React CI/CD Pipeline - Step 12" },
-                { url: "react_images/react13.png", title: "React CI/CD Pipeline - Step 13" },
-                { url: "react_images/react14.png", title: "React CI/CD Pipeline - Step 14" },
-                { url: "react_images/react15.png", title: "React CI/CD Pipeline - Step 15" },
-                { url: "react_images/react16.png", title: "React CI/CD Pipeline - Step 16" },
-                { url: "react_images/react17.png", title: "React CI/CD Pipeline - Step 17" },
-                { url: "react_images/react18.png", title: "React CI/CD Pipeline - Step 18" },
-                { url: "react_images/react19.png", title: "React CI/CD Pipeline - Step 19" },
-                { url: "react_images/react20.png", title: "React CI/CD Pipeline - Step 20" },
-                { url: "react_images/react21.png", title: "React CI/CD Pipeline - Step 21" },
-                { url: "react_images/react22.png", title: "React CI/CD Pipeline - Step 22" },
-                { url: "react_images/react23.png", title: "React CI/CD Pipeline - Step 23" },
-                { url: "react_images/react24.png", title: "React CI/CD Pipeline - Step 24" },
-                { url: "react_images/react25.png", title: "React CI/CD Pipeline - Step 25" },
-                { url: "react_images/react26.png", title: "React CI/CD Pipeline - Step 26" },
-                { url: "react_images/react27.png", title: "React CI/CD Pipeline - Step 27" },
-                { url: "react_images/react28.png", title: "React CI/CD Pipeline - Step 28" }
-            ],
-            project2: [
-                { url: "S3_1.png", title: "Cost Optimization Dashboard" },
-                { url: "S3_2.png", title: "Resource Monitoring" },
-                { url: "S3_3.png", title: "Budget Alerts" },
-                { url: "S3_4.png", title: "Cost Analytics" }
-            ],
-            project3: [
-                { url: "S3_1.png", title: "Microservices Architecture" },
-                { url: "S3_2.png", title: "Containerization Process" },
-                { url: "S3_3.png", title: "Kubernetes Deployment" },
-                { url: "S3_4.png", title: "Service Analytics" }
-            ],
-            project4: [
-                { url: "Wp_Image/wp1.png", title: "WordPress Migration - Step 1" },
-                { url: "Wp_Image/wp2.png", title: "WordPress Migration - Step 2" },
-                { url: "Wp_Image/wp3.png", title: "WordPress Migration - Step 3" },
-                { url: "Wp_Image/wp4.png", title: "WordPress Migration - Step 4" },
-                { url: "Wp_Image/wp5.png", title: "WordPress Migration - Step 5" },
-                { url: "Wp_Image/wp6.png", title: "WordPress Migration - Step 6" },
-                { url: "Wp_Image/wp7.png", title: "WordPress Migration - Step 7" },
-                { url: "Wp_Image/wp8.png", title: "WordPress Migration - Step 8" },
-                { url: "Wp_Image/wp9.png", title: "WordPress Migration - Step 9" },
-                { url: "Wp_Image/wp10.png", title: "WordPress Migration - Step 10" },
-                { url: "Wp_Image/wp11.png", title: "WordPress Migration - Step 11" },
-                { url: "Wp_Image/wp12.png", title: "WordPress Migration - Step 12" },
-                { url: "Wp_Image/wp13.png", title: "WordPress Migration - Step 13" },
-                { url: "Wp_Image/wp14.png", title: "WordPress Migration - Step 14" },
-                { url: "Wp_Image/wp15.png", title: "WordPress Migration - Step 15" },
-                { url: "Wp_Image/wp16.png", title: "WordPress Migration - Step 16" },
-                { url: "Wp_Image/wp17.png", title: "WordPress Migration - Step 17" },
-                { url: "Wp_Image/wp18.png", title: "WordPress Migration - Step 18" },
-                { url: "Wp_Image/wp19.png", title: "WordPress Migration - Step 19" },
-                { url: "Wp_Image/wp20.png", title: "WordPress Migration - Step 20" },
-                { url: "Wp_Image/wp21.png", title: "WordPress Migration - Step 21" },
-                { url: "Wp_Image/wp22.png", title: "WordPress Migration - Step 22" },
-                { url: "Wp_Image/wp23.png", title: "WordPress Migration - Step 23" },
-                { url: "Wp_Image/wp24.png", title: "WordPress Migration - Step 24" },
-                { url: "Wp_Image/wp25.png", title: "WordPress Migration - Step 25" },
-                { url: "Wp_Image/wp26.png", title: "WordPress Migration - Step 26" },
-                { url: "Wp_Image/wp27.png", title: "WordPress Migration - Step 27" },
-                { url: "Wp_Image/wp28.png", title: "WordPress Migration - Step 28" }
-            ],
-            project5: [
-                { url: "S3_1.png", title: "ChatOps Dashboard" },
-                { url: "S3_2.png", title: "Bot Interface" },
-                { url: "S3_3.png", title: "Automation Workflow" },
-                { url: "S3_4.png", title: "Bot Analytics" }
-            ],
-            project6: [
-                { url: "S3_1.png", title: "Serverless Architecture" },
-                { url: "S3_2.png", title: "API Design" },
-                { url: "S3_3.png", title: "Mobile Integration" },
-                { url: "S3_4.png", title: "App Analytics" }
-            ],
-            project7: [
-                { url: "aws_cli/cli1.png", title: "AWS CLI Automation - Step 1" },
-                { url: "aws_cli/cli2.png", title: "AWS CLI Automation - Step 2" },
-                { url: "aws_cli/cli3.png", title: "AWS CLI Automation - Step 3" },
-                { url: "aws_cli/cli4.png", title: "AWS CLI Automation - Step 4" },
-                { url: "aws_cli/cli5.png", title: "AWS CLI Automation - Step 5" },
-                { url: "aws_cli/cli6.png", title: "AWS CLI Automation - Step 6" },
-                { url: "aws_cli/cli7.png", title: "AWS CLI Automation - Step 7" },
-                { url: "aws_cli/cli8.png", title: "AWS CLI Automation - Step 8" },
-                { url: "aws_cli/cli9.png", title: "AWS CLI Automation - Step 9" },
-                { url: "aws_cli/cli10.png", title: "AWS CLI Automation - Step 10" },
-                { url: "aws_cli/cli11.png", title: "AWS CLI Automation - Step 11" },
-                { url: "aws_cli/cli12.png", title: "AWS CLI Automation - Step 12" },
-                { url: "aws_cli/cli13.png", title: "AWS CLI Automation - Step 13" },
-                { url: "aws_cli/cli14.png", title: "AWS CLI Automation - Step 14" },
-                { url: "aws_cli/cli15.png", title: "AWS CLI Automation - Step 15" }
-            ],
-            project8: [
-                { url: "S3_Bucket/S3_1.png", title: "S3 Bucket Management - Step 1" },
-                { url: "S3_Bucket/S3_2.png", title: "S3 Bucket Management - Step 2" },
-                { url: "S3_Bucket/S3_3.png", title: "S3 Bucket Management - Step 3" },
-                { url: "S3_Bucket/S3_4.png", title: "S3 Bucket Management - Step 4" }
-            ]
+            project1: Array.from({length: 28}, (_, i) => ({ url: `react_images/react${i+1}.png`, title: `React CI/CD Pipeline - Step ${i+1}` })),
+            project4: Array.from({length: 28}, (_, i) => ({ url: `Wp_Image/wp${i+1}.png`, title: `WordPress Migration - Step ${i+1}` })),
+            project7: Array.from({length: 15}, (_, i) => ({ url: `aws_cli/cli${i+1}.png`, title: `AWS CLI Automation - Step ${i+1}` })),
+            project8: Array.from({length: 4}, (_, i) => ({ url: `S3_Bucket/S3_${i+1}.png`, title: `S3 Bucket Management - Step ${i+1}` }))
         };
 
-        let currentGallery = null;
-        let currentIndex = 0;
+        // ...existing code...
+
+        // Open gallery for a specific project
+        function openGallery(projectId) {
+            currentGallery = projectId;
+            currentIndex = 0;
+            showImage();
+            document.getElementById('gallery-modal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close gallery
+        function closeGallery() {
+            document.getElementById('gallery-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Show current image in gallery
+        function showImage() {
+            const gallery = galleries[currentGallery];
+            const image = document.getElementById('gallery-image');
+            const title = document.getElementById('image-title');
+            
+            if (gallery && gallery.length > 0) {
+                image.src = gallery[currentIndex].url;
+                title.textContent = gallery[currentIndex].title;
+            }
+        }
+
+        // Show next image
+        function nextImage() {
+            const gallery = galleries[currentGallery];
+            if (gallery && gallery.length > 0) {
+                currentIndex = (currentIndex + 1) % gallery.length;
+                showImage();
+            }
+        }
+
+        // Show previous image
+        function prevImage() {
+            const gallery = galleries[currentGallery];
+            if (gallery && gallery.length > 0) {
+                currentIndex = (currentIndex - 1 + gallery.length) % gallery.length;
+                showImage();
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (document.getElementById('gallery-modal').style.display === 'flex') {
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'ArrowLeft') prevImage();
+                if (e.key === 'Escape') closeGallery();
+            }
+        });
+
+        // Close modal when clicking outside image
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('gallery-modal')) {
+                closeGallery();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ...existing code...
 
         // Open gallery for a specific project
         function openGallery(projectId) {
