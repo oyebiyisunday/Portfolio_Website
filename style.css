@@ -1,0 +1,418 @@
+/* Updated CSS with professional summary and projects portfolio */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #e6f7ff 0%, #f0e6ff 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, #1e88e5, #5e35b1);
+    border-radius: 16px 16px 0 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: white;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+#name {
+    margin: 0;
+    font-size: 2.4em;
+    color: #1a237e;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #1e88e5, #5e35b1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#bio {
+    color: #455a64;
+    margin: 15px auto 25px;
+    max-width: 800px;
+    font-size: 1.15em;
+    padding: 25px;
+    background: rgba(225, 245, 254, 0.3);
+    border-radius: 14px;
+    line-height: 1.8;
+    box-shadow: inset 0 0 15px rgba(33, 150, 243, 0.1);
+}
+
+#github-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.15em;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: rgba(33, 150, 243, 0.1);
+}
+
+#github-link:hover {
+    background: rgba(33, 150, 243, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#resume-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #1e88e5, #5e35b1);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+    border: none;
+    font-size: 1.1em;
+}
+
+#resume-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
+    background: linear-gradient(90deg, #1976d2, #512da8);
+}
+
+main section {
+    margin-bottom: 50px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+main section:last-child {
+    border-bottom: none;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.9em;
+    color: #1a237e;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e0e0e0;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e88e5, #5e35b1);
+    border-radius: 4px;
+}
+
+h3 {
+    font-size: 1.45em;
+    color: #1a237e;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 14px;
+    position: relative;
+}
+
+/* Professional Summary */
+#professional-summary {
+    background: rgba(236, 239, 241, 0.3);
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    border-left: 4px solid #1e88e5;
+}
+
+.summary-content {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.summary-content p {
+    margin-bottom: 20px;
+}
+
+.summary-content ul {
+    margin: 20px 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.summary-content li {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.summary-content li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #1e88e5;
+    font-size: 1.2em;
+}
+
+/* Projects Portfolio */
+#projects-portfolio {
+    margin-top: 40px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-image {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-details {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-details h3 {
+    margin-top: 0;
+    color: #1a237e;
+    font-size: 1.4em;
+}
+
+.portfolio-details p {
+    flex: 1;
+    margin-bottom: 20px;
+    color: #455a64;
+    line-height: 1.7;
+}
+
+.code-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #1e88e5, #5e35b1);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    align-self: flex-start;
+    border: 2px solid transparent;
+}
+
+.code-link:hover {
+    background: transparent;
+    border-color: #1e88e5;
+    color: #1e88e5;
+    box-shadow: 0 5px 15px rgba(30, 136, 229, 0.2);
+}
+
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.skill-category {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+    color: #1a237e;
+    font-size: 1.25em;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Other sections styling remains similar to previous version */
+/* ... [rest of the CSS] ... */
+
+/* Floating elements for visual interest */
+.floating {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+.floating-1 {
+    width: 250px;
+    height: 250px;
+    background: #1e88e5;
+    border-radius: 50%;
+    top: -80px;
+    right: -80px;
+}
+
+.floating-2 {
+    width: 200px;
+    height: 200px;
+    background: #5e35b1;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    bottom: 50px;
+    left: -60px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .container {
+        padding: 35px;
+        margin: 25px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-item {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        margin: 15px;
+    }
+    
+    #name {
+        font-size: 2em;
+    }
+    
+    header img {
+        width: 130px;
+        height: 130px;
+    }
+    
+    #bio {
+        padding: 20px;
+        font-size: 1.05em;
+    }
+    
+    .portfolio-grid {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+    }
+    
+    #name {
+        font-size: 1.8em;
+    }
+    
+    #professional-summary {
+        padding: 20px;
+    }
+    
+    .portfolio-details {
+        padding: 20px;
+    }
+    
+    .code-link {
+        width: 100%;
+    }
+}
