@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunday Oyebiyi | Cloud Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
+    <!-- External Resources with Integrity -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -32,13 +45,13 @@
                     </div>
                     
                     <div class="social-links">
-                        <a href="https://github.com/oyebiyisunday?tab=repositories" target="_blank" class="social-link">
+                        <a href="https://github.com/oyebiyisunday?tab=repositories" target="_blank" rel="noopener noreferrer" class="social-link">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/sunday-oyebiyi/" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/sunday-oyebiyi/" target="_blank" rel="noopener noreferrer" class="social-link">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="mailto:oyebiyisunday@gmail.com" target="_blank" class="social-link">
+                        <a href="mailto:oyebiyisunday@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -101,7 +114,7 @@
                 </div>
                 
                 <div class="about-skills">
-                    <h4>Core Specializations</h4>
+                    <h4><i class="fas fa-star"></i> Core Specializations</h4>
                     <div class="skills-tags">
                         <span class="skill-tag">AWS Cloud Architecture</span>
                         <span class="skill-tag">Infrastructure as Code</span>
@@ -109,7 +122,6 @@
                         <span class="skill-tag">CI/CD Automation</span>
                         <span class="skill-tag">Security & Compliance</span>
                         <span class="skill-tag">Database Design and Management</span>
-                        <span class="skill-tag">Full Stack Development</span>
                     </div>
                 </div>
             </div>
@@ -135,7 +147,7 @@
                             <span class="tech-item">CloudFormation</span>
                         </div>
                         <div class="project-actions">
-                            <a href="https://github.com/oyebiyisunday/React-cicd-aws" class="btn btn-outline" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://github.com/oyebiyisunday/React-cicd-aws" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Code</a>
                             <button class="btn btn-outline" onclick="openGallery('project1')"><i class="fas fa-images"></i> View Gallery</button>
                         </div>
                     </div>
@@ -313,7 +325,7 @@
                     </div>
                     <h4>Information Security and Assurance Graduate Certificate</h4>
                     <p>Department of Computer and Information Sciences at Towson University. Advanced cybersecurity principles, risk management, and security frameworks implementation. Graduate-level certificate program focusing on comprehensive information security practices.</p>
-                    <a href="https://catalog.towson.edu/graduate/degree-certificate-programs/jess-mildred-fisher-science-mathematics/information-security-assurance-certificate/#requirementstext" class="cert-view-btn" target="_blank">
+                    <a href="https://catalog.towson.edu/graduate/degree-certificate-programs/jess-mildred-fisher-science-mathematics/information-security-assurance-certificate/#requirementstext" class="cert-view-btn" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-external-link-alt"></i> View Certificate
                     </a>
                 </div>
@@ -429,41 +441,30 @@
             <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <span class="timeline-date">2024 - Present</span>
+                    <span class="timeline-date">May 2024 - Present</span>
                     <h3>Cloud Engineer</h3>
-                    <p class="company">Towson University | Baltimore, Maryland, USA</p>
+                    <p class="company">Smooth Ace · Part-time | Washington, District of Columbia, United States · On-site</p>
                     <ul>
-                        <li>Designed and implemented automated CI/CD pipelines using AWS CodePipeline, reducing deployment time by 60%</li>
-                        <li>Managed containerized applications with Docker and Kubernetes, improving scalability and resource utilization</li>
-                        <li>Automated infrastructure provisioning using Terraform and CloudFormation for consistent, repeatable deployments</li>
-                        <li>Implemented monitoring and logging solutions with CloudWatch and ELK stack for proactive issue resolution</li>
-                        <li>Optimized AWS costs through automated resource scheduling and rightsizing, achieving 30% cost reduction</li>
+                        <li>Reduced deployment cycles from days to under 2 hours by designing and managing GitHub Actions/Jenkins pipelines for microservices and data workloads. Implemented automated rollbacks and validation to ensure release reliability.</li>
+                        <li>Provisioned and maintained AWS environments (dev/QA/prod) using Terraform, enabling self-service infrastructure and cutting environment setup time by 80%.</li>
+                        <li>Containerized Python/Java services (Docker) and managed deployment on EKS clusters scaling to nodes, optimizing resource utilization, and ensuring consistent implementations.</li>
+                        <li>Mitigated risks by embedding SAST/DAST scans (SonarQube/Trivy) into CI/CD pipelines and automating secrets rotation with HashiCorp Vault, preventing high-risk vulnerabilities in pre-production.</li>
+                        <li>Reduced monthly AWS spend by 30% through strategic use of spot instances, auto-scaling policies, and resource tagging – reallocating savings to innovation initiatives.</li>
+                        <li>Maintained 99.95% uptime for critical systems using Grafana dashboards and ELK-powered logging. Streamlined incident response, reducing MTTR by 45% through playbooks and on-call participation.</li>
                     </ul>
                 </div>
                 
                 <div class="timeline-item">
-                    <span class="timeline-date">2021 - 2023</span>
-                    <h3>Full Stack Developer</h3>
-                    <p class="company">Freelance | Remote</p>
+                    <span class="timeline-date">Jun 2020 - Dec 2023</span>
+                    <h3>Data Engineer</h3>
+                    <p class="company">First Bank of Nigeria Ltd. · Full-time | Lagos, Nigeria · On-site</p>
                     <ul>
-                        <li>Developed responsive web applications using React, Node.js, and modern JavaScript frameworks</li>
-                        <li>Built RESTful APIs and integrated third-party services for enhanced application functionality</li>
-                        <li>Implemented database solutions using PostgreSQL and MongoDB for optimal data management</li>
-                        <li>Collaborated with clients to gather requirements and deliver custom software solutions</li>
-                        <li>Managed version control and project deployment using Git and cloud platforms</li>
-                    </ul>
-                </div>
-                
-                <div class="timeline-item">
-                    <span class="timeline-date">2019 - 2021</span>
-                    <h3>IT Support Specialist</h3>
-                    <p class="company">Tech Solutions Inc. | Lagos, Nigeria</p>
-                    <ul>
-                        <li>Provided technical support for hardware and software issues, maintaining 95% customer satisfaction</li>
-                        <li>Managed network infrastructure and server maintenance for small to medium businesses</li>
-                        <li>Implemented backup solutions and disaster recovery procedures to ensure data integrity</li>
-                        <li>Trained end-users on new technologies and software applications</li>
-                        <li>Documented technical procedures and maintained IT asset inventory</li>
+                        <li>Drove modernization of retail and corporate banking data pipelines on AWS, improving scalability, performance, and cost efficiency across ETL workflows.</li>
+                        <li>Built and maintained 10+ AWS Glue/Python pipelines processing 2TB+ daily transactional data, reducing reporting latency by 40% through optimized Redshift/S3 batch and real-time workflows.</li>
+                        <li>Reduced manual operations by automating ingestion from 15+ core banking systems and APIs via AWS Lambda. Accelerated pipeline deployment from hours to minutes using Terraform/CloudFormation.</li>
+                        <li>Improved Redshift query speed 3x through sort keys, distribution strategies, and workload tuning. Lowered cloud costs by rightsizing resources and implementing S3 Glacier archival policies.</li>
+                        <li>Managed production workflows with Apache Airflow, integrating data validation, CloudWatch alerts, and logging to maintain 99.9% SLA compliance.</li>
+                        <li>Transitioned legacy batch pipelines to cloud-native AWS architecture (Glue/Lambda/Redshift), reducing data latency and operational overhead by 50%.</li>
                     </ul>
                 </div>
             </div>
@@ -476,8 +477,7 @@
                 <div class="timeline-item">
                     <span class="timeline-date">2024 - 2025</span>
                     <h3>Master of Science in Applied Information Technology</h3>
-                    <p class="company">Towson University | Baltimore, Maryland, USA</p>
-                    <p>GPA: 3.86 / 4.0</p>
+                    <p class="company">Towson University | Baltimore, Maryland, USA</p>     
                     <p><em>Major: Internet Applications and Database Management Systems</em></p>
                 </div>
                 
@@ -514,7 +514,7 @@
                         <i class="fas fa-map-marker-alt fa-2x contact-icon"></i>
                         <h3>Location</h3>
                         <p>Baltimore, Maryland, USA</p>
-                        <a href="https://www.mapquest.com/us/maryland/21206-md-286275741" class="btn contact-btn"><i class="fas fa-map"></i> View Map</a>
+                        <a href="https://www.mapquest.com/us/maryland/21206-md-286275741" class="btn contact-btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-map"></i> View Map</a>
                     </div>
                 </div>
                 
@@ -528,8 +528,8 @@
             <p>© 2025 Sunday Oyebiyi. All rights reserved.</p>
             <p>Designed with ❤️ and modern web technologies</p>
             <div class="footer-social">
-                <a href="https://github.com/oyebiyisunday" class="footer-link"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sunday-oyebiyi/" class="footer-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/oyebiyisunday" class="footer-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sunday-oyebiyi/" class="footer-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </footer>
     </div>
